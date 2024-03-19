@@ -7,7 +7,7 @@
 Tipe data adalah klasifikasi data yang memberitahu compiler atau interpreter bagaimana pengembang ingin memasukkan data[1]. Tipe data juga membantu memengaruhi cara data tersebut diproses, disimpan, dan digunakan dalam program. Dengan kita memahami tipe data, maka kita dapat membuat keputusan dengan lebih baik dalam merancang struktur data, mengoptimalkan kinerja program, dan dapat terhindar dari manipulasi data. Jenis – jenis tipe data antara lain:
 
 ## 1. Tipe Data Primitif
-Bahasa pemrograman seperti C++ dan Java memiliki tipe data bawaan (disebut tipe data dasar atau tipe data primitif ) seperti bilangan bulat yang mewakili informasi dan memiliki operasi yang dapat dilakukan pada data tersebut (seperti perkalian dan penjumlahan). Misalnya tipe data dasar bawaan di C++ adalah short, int, long, float, double dan char[2].
+Bahasa pemrograman seperti C++ dan Java memiliki tipe data bawaan (disebut tipe data dasar atau tipe data primitif)seperti bilangan bulat yang mewakili informasi dan memiliki operasi yang dapat dilakukan pada data tersebut (seperti perkalian dan penjumlahan). Misalnya tipe data dasar bawaan di C++ adalah short, int, long, float, double dan char[2].
 
 ## 2. Tipe Data Abstrak
 Tipe data abstrak adalah sebuah model matematis untuk jenis data, dimana tipe data tersebut mendefinisikan operasi yang dapat dilakukan padanya, tanpa mengungkapkan implementasi detail dari operasi tersebut. Fitur Class adalah fitur yang sering digunakan untuk Object Oriented Programming (OOP) pada bahasa C++ yang mirip dengan struct pada bahasa C. Akses struct bersifat public sedangkan class bersifat private.
@@ -153,4 +153,5 @@ Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran
 
 ## Referensi
 [1] Nagendra Singh, Manish Kumar, Vidhan Singh, and Dayanand Choudhary, “Pengenalan tipe data dasar dalam pemrograman,” Nov. 2023.
+
 [2] W. S. Y. Hardy, “Abstract Data Types,” 2001.
