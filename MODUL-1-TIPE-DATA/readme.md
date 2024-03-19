@@ -3,7 +3,7 @@
 
 ## Dasar Teori
 
-## TIPE DATA
+### TIPE DATA
 Tipe data adalah klasifikasi data yang memberitahu compiler atau interpreter bagaimana pengembang ingin memasukkan data[1]. Tipe data juga membantu memengaruhi cara data tersebut diproses, disimpan, dan digunakan dalam program. Dengan kita memahami tipe data, maka kita dapat membuat keputusan dengan lebih baik dalam merancang struktur data, mengoptimalkan kinerja program, dan dapat terhindar dari manipulasi data. Jenis – jenis tipe data antara lain:
 
 ## 1. Tipe Data Primitif
@@ -14,9 +14,13 @@ Tipe data abstrak adalah sebuah model matematis untuk jenis data, dimana tipe da
 
 ## 3. Tipe Data Koleksi
 Tipe data koleksi di C++ sering dikelola melalui Standard Template Library (STL), yang menyediakan kelas-kelas untuk berbagai struktur data koleksi. Beberapa contoh termasuk:
+
  a.	Vector: Mirip dengan array, tetapi ukurannya dapat berubah.
+ 
  b.	List  : Daftar terhubung yang memungkinkan penyisipan dan penghapusan elemen dengan cepat di mana saja dalam daftar.
+ 
  c.	Map   : Koleksi pasangan kunci-nilai dengan kunci unik, sering digunakan untuk pencarian cepat berdasarkan kunci.
+ 
  d.	Set   : Kumpulan elemen unik yang terurut secara otomatis.
 
 ### 1. Tipe Data Primitif
