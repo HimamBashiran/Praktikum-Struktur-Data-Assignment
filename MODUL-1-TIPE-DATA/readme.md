@@ -14,14 +14,12 @@ Tipe data abstrak adalah sebuah model matematis untuk jenis data, dimana tipe da
 
 ## 3. Tipe Data Koleksi
 Tipe data koleksi di C++ sering dikelola melalui Standard Template Library (STL), yang menyediakan kelas-kelas untuk berbagai struktur data koleksi. Beberapa contoh termasuk:
-
- a.	Vector: Mirip dengan array, tetapi ukurannya dapat berubah.
- 
- b.	List  : Daftar terhubung yang memungkinkan penyisipan dan penghapusan elemen dengan cepat di mana saja dalam daftar.
- 
- c.	Map   : Koleksi pasangan kunci-nilai dengan kunci unik, sering digunakan untuk pencarian cepat berdasarkan kunci.
- 
- d.	Set   : Kumpulan elemen unik yang terurut secara otomatis.
+<pre>
+a.	Vector: Mirip dengan array, tetapi ukurannya dapat berubah.
+b.	List  : Daftar terhubung yang memungkinkan penyisipan dan penghapusan elemen dengan cepat di mana saja dalam daftar.
+c.	Map   : Koleksi pasangan kunci-nilai dengan kunci unik, sering digunakan untuk pencarian cepat berdasarkan kunci.
+d.	Set   : Kumpulan elemen unik yang terurut secara otomatis.
+</pre>
 
 ### 1. Tipe Data Primitif
 
