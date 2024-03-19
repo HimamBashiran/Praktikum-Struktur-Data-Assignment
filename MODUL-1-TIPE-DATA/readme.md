@@ -126,7 +126,7 @@ int main() {
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![Screenshot (217)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/408c7026-b530-46b7-bec3-b8b0621f42cd)
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
