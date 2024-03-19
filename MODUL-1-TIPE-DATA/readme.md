@@ -21,6 +21,8 @@ c.	Map   : Koleksi pasangan kunci-nilai dengan kunci unik, sering digunakan untu
 d.	Set   : Kumpulan elemen unik yang terurut secara otomatis.
 </pre>
 
+## Guided
+
 ### 1. Tipe Data Primitif
 
 ```C++
