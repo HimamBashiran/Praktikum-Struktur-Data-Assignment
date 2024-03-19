@@ -1,3 +1,7 @@
-NAMA: HIMAM BASHIRAN
-NIM: 2311110055
-KELAS: S1SD-04B
+## Repository Praktkum Algoritma & Struktur Data
+
+<pre>
+Nama  : Himam Bashiran
+NIM   : 2311110055
+Kelas : S1SD04-B 
+</pre>
