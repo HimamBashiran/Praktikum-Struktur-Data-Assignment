@@ -299,9 +299,9 @@ int main() {
 }
 ```
 #### Output:
+![Screenshot (384)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/3837c18a-0839-45a4-8b1c-481b47525aed)
 
-
-
+Map adalah struktur data asosiatif yang memungkinkan penyimpanan dan pengaksesan data berdasarkan kunci yang unik. Map disini digunakan untuk menyimpan kunci nilai yang mewakili hari dalam seminggu. Perbedaannya adalah Array menggunakan indeks berbasis integer yang dimulai dari 0 dan secara berurutan tetapi kurang fleksibel sedangkan Map mengizinkan kunci dari berbagai tipe data dan tidak harus berurutan atau berbasis integer dan  fleksible dalam penambahan, penghapusan, atau modifikasi dengan mudah.
 
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
