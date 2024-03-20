@@ -259,7 +259,11 @@ int main(){
 }
 ```
 #### Output:
+![Screenshot (382)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/c7e8a46a-69e1-4b95-80ad-aa02cc20c2a9)
 
+a) Class: fungsi class merupakan fungsi yang sering digunakan pada Object Oriented Programming (OOP) dan mengandung atribut (variabel) dan method (fungsi) yang sering didefinisikan sebagai perilaku dan sifatnya. Akses kontrol dari class adalah private. Dalam program ini, class Buku tidak digunakan secara langsung tetapi mewakili sebuah kelas dengan anggota private.
+
+b) Struct: fungsi struct merupakan fungsi yang mirip dengan class tetapi memiliki struktur data yang lebih sederhana dan akses kontrol yang bersifat public, artinya dapat diakses dari mana saja. Dalam contoh program ini, Buku_Favorit1 adalah kelas dengan anggota public, yang memungkinkan akses langsung ke judul, pengarang, dan tahun_terbit dari fungsi main() atau bagian lain dari kode.
 
 
 ## Kesimpulan
