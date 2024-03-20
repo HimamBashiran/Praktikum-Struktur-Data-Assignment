@@ -54,13 +54,17 @@ int main()
         cout<<num1 / num2;
         break;
     default:
-        cout<<"Eror!operator is not correct";
+        cout<<"Error!operator is not correct";
     
     }//switch statement ends
     return 0;
 }
 ```
-Kode di atas merupakan program kalkulator sederhana dimana kita dapat menginput operator dan angka yang kita inginkan untuk dihitung. 
+Program di atas merupakan program kalkulator sederhana dimana kita dapat menginput operator dan angka yang kita inginkan untuk dihitung. 
+
+Variabel op merupakan variabel bertipe char yang dapat dimasukkan satu karakter. Dalam program ini kita dapat memasukkan operator yang diinginkan seperti +, -, *, /. Variabel num1, num2 merupakan variabel bertipe data float yang dapat kita masukkan operand (angka) yang kita inginkan.
+
+Struktur switch dan case merupakan struktur dalam pengambilan keputusan. Blok switch memeriksa nilai op. Jika op adalah +, maka program akan menjalankan num1 + num2. Jika op adalah -, maka program akan menjalankan num1 - num2 dan seterusnya. Akan tetapi, jika op tidak sesuai dengan semua case, maka program akan menampilkan Error!operator is not correct.
 
 ### 2. Tipe Data Abstrak
 
@@ -100,7 +104,9 @@ int main()
     return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas merupakan program yang menggunakan tipe data struct yang memungkinkan kita menggabungkan beberapa variabel dengan tipe data yang berbeda menjadi satu kesatuan. Dalam program ini, struct Mahasiswa memiliki tiga anggota yaitu name, age, address. name dan address merupakan pointer ke string (const char *) dan age adalah bilangan bulat (int). 
+
+Variabel dapat diisi dengan tipe struct. Dalam program ini, kita membuat dua variabel yaitu mhs1 dan mhs2  dengan tipe Mahasiswa. Kita dapat mengisi nilai ke variabel mhs1 dan mhs2 dengan menggunakan operator ".", contohnya mhs.name = "Dian" dan dapat dipanggil menggunakan syntax printf.
 
 ### 3. Tipe Data Koleksi
 
@@ -126,11 +132,11 @@ int main()
     return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas merupakan program tipe data koleksi yaitu array. int nilai[5]; mendeklarasikan sebuah array integer dengan nama nilai dan berukuran 5 elemen serta dapat menyimpan 5 nilai integer. nilai[0] = 23 artinya memberikan bilangan bulat spesifik 23 ke variabel nilai dan ditampilkan menggunakan pernyataan cout.
 
 ## Unguided 
 
-### 1. [Soal]
+### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
 
 ```C++
 #include <iostream>
@@ -142,7 +148,6 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (217)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/408c7026-b530-46b7-bec3-b8b0621f42cd)
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
