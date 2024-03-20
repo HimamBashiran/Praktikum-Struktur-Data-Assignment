@@ -191,12 +191,13 @@ int main(){
 #### Output:
 ![Screenshot (380)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/ebef92c5-7d66-4c8f-9361-bee0b4dd08b6)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program di atas merupakan program untuk menghitung volume dan luas permukaan kerucut. Mendeklarasikan tipe data abstrak yaitu const float pi = 3.14.
 
-#### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+Membuat fungsi yang memuat variabel hitungVolumeKerucut merupakan variabel yang memiliki parameter rusuk dan tinggi yang bertipe data float. Ketika fungsi tersebut dipanggil, maka akan mengembalikan rumus dari volume kerucut yaitu (1.0/3 * pi * rusuk * rusuk * tinggi).
 
+Membuat fungsi yang memuat variabel hitungLuasKerucut merupakan variabel yang memiliki parameter rusuk, tinggi, garispelukis yang bertipe data float. Ketika fungsi tersebut dipanggil, maka akan mengembalikan rumus dari luas permukaan kerucut yaitu (pi * rusuk * (rusuk+garispelukis)). 
 
+Dalam fungsi utama, mendeklarasikan variabel PilihMenu untuk menentukan 
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
