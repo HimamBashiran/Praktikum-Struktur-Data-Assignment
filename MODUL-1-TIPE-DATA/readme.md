@@ -265,6 +265,43 @@ a) Class: fungsi class merupakan fungsi yang sering digunakan pada Object Orient
 
 b) Struct: fungsi struct merupakan fungsi yang mirip dengan class tetapi memiliki struktur data yang lebih sederhana dan akses kontrol yang bersifat public, artinya dapat diakses dari mana saja. Dalam contoh program ini, Buku_Favorit1 adalah kelas dengan anggota public, yang memungkinkan akses langsung ke judul, pengarang, dan tahun_terbit dari fungsi main() atau bagian lain dari kode.
 
+### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map
+
+```C++
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main() {
+    // Mendeklarasikan map 'hari' dengan key bertipe data integer dan value bertipe data string
+    map<int, string> hari;
+
+    // Mengisi map 'hari' dengan data untuk setiap hari dalam seminggu
+    hari[0] = "Senin";
+    hari[1] = "Selasa";
+    hari[2] = "Rabu";
+    hari[3] = "Kamis";
+    hari[4] = "Jum'at";
+    hari[5] = "Sabtu";
+    hari[6] = "Minggu";
+
+    //// Mencetak judul dan nama hari untuk setiap key dalam map 'hari'
+    cout << "=== Hari dalam Seminggu ===" << endl;
+    cout << "Hari ke-1: " << hari[0] << endl;
+    cout << "Hari ke-2: " << hari[1] << endl;
+    cout << "Hari ke-3: " << hari[2] << endl;
+    cout << "Hari ke-4: " << hari[3] << endl;
+    cout << "Hari ke-5: " << hari[4] << endl;
+    cout << "Hari ke-6: " << hari[5] << endl;
+    cout << "Hari ke-7: " << hari[6] << endl;
+
+    return 0;
+}
+```
+#### Output:
+
+
+
 
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
