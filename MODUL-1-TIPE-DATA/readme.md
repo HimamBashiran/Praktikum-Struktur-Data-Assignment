@@ -61,6 +61,7 @@ int main()
     return 0;
 }
 ```
+### Penjelasan
 Program di atas merupakan program kalkulator sederhana dimana kita dapat menginput operator dan angka yang kita inginkan untuk dihitung. 
 
 Variabel op merupakan variabel bertipe char yang dapat dimasukkan satu karakter. Dalam program ini kita dapat memasukkan operator yang diinginkan seperti +, -, *, /. Variabel num1, num2 merupakan variabel bertipe data float yang dapat kita masukkan operand (angka) yang kita inginkan.
@@ -105,6 +106,7 @@ int main()
     return 0;
 }
 ```
+### Penjelasan
 Program di atas merupakan program yang menggunakan tipe data struct yang memungkinkan kita menggabungkan beberapa variabel dengan tipe data yang berbeda menjadi satu kesatuan. Dalam program ini, struct Mahasiswa memiliki tiga anggota yaitu name, age, address. name dan address merupakan pointer ke string (const char *) dan age adalah bilangan bulat (int). 
 
 Variabel dapat diisi dengan tipe struct. Dalam program ini, kita membuat dua variabel yaitu mhs1 dan mhs2  dengan tipe Mahasiswa. Kita dapat mengisi nilai ke variabel mhs1 dan mhs2 dengan menggunakan operator ".", contohnya mhs.name = "Dian" dan dapat dipanggil menggunakan syntax printf.
@@ -133,6 +135,7 @@ int main()
     return 0;
 }
 ```
+### Penjelasan
 Program di atas merupakan program tipe data koleksi yaitu array. int nilai[5]; mendeklarasikan sebuah array integer dengan nama nilai dan berukuran 5 elemen serta dapat menyimpan 5 nilai integer. nilai[0] = 23 artinya memberikan bilangan bulat spesifik 23 ke variabel nilai dan ditampilkan menggunakan pernyataan cout.
 
 ## Unguided 
@@ -191,7 +194,7 @@ int main(){
 ```
 #### Output:
 ![Screenshot (380)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/ebef92c5-7d66-4c8f-9361-bee0b4dd08b6)
-
+### Penjelasan
 Program di atas merupakan program untuk menghitung volume dan luas permukaan kerucut. Mendeklarasikan tipe data abstrak yaitu const float pi = 3.14.
 
 Membuat fungsi yang memuat variabel hitungVolumeKerucut merupakan variabel yang memiliki parameter rusuk dan tinggi yang bertipe data float. Ketika fungsi tersebut dipanggil, maka akan mengembalikan rumus dari volume kerucut yaitu (1.0/3 * pi * rusuk * rusuk * tinggi).
@@ -261,7 +264,7 @@ int main(){
 ```
 #### Output:
 ![Screenshot (382)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/c7e8a46a-69e1-4b95-80ad-aa02cc20c2a9)
-
+### Penjelasan
 a) Class: fungsi class merupakan fungsi yang sering digunakan pada Object Oriented Programming (OOP) dan mengandung atribut (variabel) dan method (fungsi) yang sering didefinisikan sebagai perilaku dan sifatnya. Akses kontrol dari class adalah private. Dalam program ini, class Buku tidak digunakan secara langsung tetapi mewakili sebuah kelas dengan anggota private.
 
 b) Struct: fungsi struct merupakan fungsi yang mirip dengan class tetapi memiliki struktur data yang lebih sederhana dan akses kontrol yang bersifat public, artinya dapat diakses dari mana saja. Dalam contoh program ini, Buku_Favorit1 adalah kelas dengan anggota public, yang memungkinkan akses langsung ke judul, pengarang, dan tahun_terbit dari fungsi main() atau bagian lain dari kode.
@@ -301,11 +304,15 @@ int main() {
 ```
 #### Output:
 ![Screenshot (384)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/3837c18a-0839-45a4-8b1c-481b47525aed)
-
+### Penjelasan
 Map adalah struktur data asosiatif yang memungkinkan penyimpanan dan pengaksesan data berdasarkan kunci yang unik. Map disini digunakan untuk menyimpan kunci nilai yang mewakili hari dalam seminggu. Perbedaannya adalah Array menggunakan indeks berbasis integer yang dimulai dari 0 dan secara berurutan tetapi kurang fleksibel sedangkan Map mengizinkan kunci dari berbagai tipe data dan tidak harus berurutan atau berbasis integer dan  fleksible dalam penambahan, penghapusan, atau modifikasi dengan mudah.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+#### Hasil praktikum: 
+Pada kesempatan praktikum ini, saya belajar tipe data menggunakan bahasa C++. Disini terdapat tiga jenis tipe data yaitu tipe data primitif seperti short, int, long, float, double dan char. Tipe data abstrak seperti class dan struct. Serta tipe data koleksi seperti list dan map.
+
+#### Pelajaran yang didapat
+Ada berbagai macam tipe data dan pentingnya memahami tipe data karena dapat membantu memengaruhi cara data tersebut diproses, disimpan, dan digunakan dalam program. Tipe data primitif yang saya gunakan dalam program saya adalah float, integer, dan char. Kemudian, tipe data abstrak yang saya gunakan dalam program saya adalah class dan struct serta tipe data koleksi yang saya gunakan dalam program saya adalah map. Tipe data begitu penting untuk kita pelajari karena mengandung pemakaian penggunaan memori, menginterpretasikan nilai, mengamankan kode, dan dapat menentukan performa kode tersebut.
 
 ## Referensi
 [1] Nagendra Singh, Manish Kumar, Vidhan Singh, and Dayanand Choudhary, “Pengenalan tipe data dasar dalam pemrograman,” Nov. 2023.
