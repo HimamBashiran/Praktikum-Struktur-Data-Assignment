@@ -1,4 +1,4 @@
-## Repository Praktkum Algoritma & Struktur Data
+## Repository Praktikum Algoritma & Struktur Data
 
 <pre>
 Nama  : Himam Bashiran
