@@ -322,6 +322,7 @@ Terakhir, program menampilkan array secara visual dalam format tiga dimensi.
 ```C++
 #include <iostream>
 using namespace std;
+
 int main() {
     // Deklarasi tipe data sebuah variabel
     int maks, min, a, lokasiMax, lokasiMin, jumlah = 0, rata;
@@ -369,9 +370,32 @@ int main() {
     cout << "Nilai maksimum adalah " << maks << " berada di Array ke-" << lokasiMax << endl;
     cout << "Nilai minimum adalah " << min << " berada di Array ke-" << lokasiMin << endl;
 
-    // Menghitung rata-rata
-    rata = jumlah / a;
-    cout << "Nilai rata-ratanya adalah " << rata << endl;
+    // Menampilkan menu
+    cout << "Menu:\n";
+    cout << "1. Maksimum\n";
+    cout << "2. Minimum\n";
+    cout << "3. Rata-rata\n";
+
+    // Pilihan operasi
+    cout << "Pilih operasi: ";
+    int pilihan;
+    cin >> pilihan;
+
+    switch (pilihan) {
+        case 1:
+            cout << "Nilai maksimum adalah " << maks << " berada di Array ke-" << lokasiMax << endl;
+            break;
+        case 2:
+            cout << "Nilai minimum adalah " << min << " berada di Array ke-" << lokasiMin << endl;
+            break;
+        case 3:
+            // Menghitung rata-rata
+            rata = jumlah / a;
+            cout << "Nilai rata-ratanya adalah " << rata << endl;
+            break;
+        default:
+            cout << "Pilihan tidak valid." << endl;
+    }
 
     return 0;
 }
