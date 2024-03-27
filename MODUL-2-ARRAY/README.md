@@ -229,81 +229,60 @@ Setelah itu, program mencetak bilangan genap dan bilangan ganjil yang ditemukan.
 #include <iostream>
 using namespace std;
 
-int main() {
-    // Deklarasi tipe data sebuah variabel
-    int maks, min, a, lokasiMax, lokasiMin, jumlah = 0, rata;
-    // Input panjang array
-    cout << "Masukkan panjang array: ";
-    cin >> a;
+int main(){
+    // Deklarasi variabel
+    int x_size, y_size, z_size;
 
-    // Validasi panjang array harus lebih besar dari 0
-    if (a <= 0) {
-        cout << "Panjang array harus lebih besar dari 0." << endl;
-        return 1; // Return 1 untuk indikasi error
-    }
-
-    // Deklarasi panjang array
-    int array[a];
-
-    // Input elemen array
-    cout << "Masukkan " << a << " angka\n";
-
-    // Fungsi perulangan untuk menjumlahkan nilai array
-    for (int i = 0; i < a; i++) {
-        cout << "Array ke-" << i << ": ";
-        cin >> array[i];
-        jumlah += array[i];
-
-        // Inisialisasi nilai maks dan min dengan elemen pertama
-        if (i == 0) {
-            maks = min = array[i];
-            lokasiMax = lokasiMin = i;
-        } else {
-            // Mencari nilai maksimum
-            if (array[i] > maks) {
-                maks = array[i];
-                lokasiMax = i;
+    // Memasukkan jumlah dan ukuran elemen array
+    cout << "==================================" << endl;
+    cout << "   Array tiga dimensi (x, y, z)" << endl;
+    cout << "==================================" << endl;
+    cout << "\nMasukkan ukuran matriks array: ";
+    cin >> x_size;
+    cout << "\nMasukkan ukuran baris array: ";
+    cin >> y_size;
+    cout << "\nMasukkan ukuran kolom array: ";
+    cin >> z_size;
+    // Deklarasi Array
+    int arr[x_size][y_size][z_size];
+    // Input elemen
+    for (int x=0; x < x_size; x++)
+    {
+        for (int y=0; y < y_size; y++)
+        {
+            for (int z=0; z < z_size; z++)
+            {
+                cout << "Input array[" << x << "] [" << y << "] [" << z <<"] = ";
+                cin >> arr[x][y][z];
             }
-            // Mencari nilai minimum
-            if (array[i] < min) {
-                min = array[i];
-                lokasiMin = i;
+        }
+        cout << endl;
+    }
+    // Output Array
+    for (int x = 0; x < x_size; x++)
+    {
+        for (int y = 0; y < y_size; y++)
+        {
+            for (int z = 0; z < z_size; z++)
+            {
+                cout << "Data array[" << x << "] [" << y << "] [" << z << "] = " << arr[x][y][z] << endl;
             }
         }
     }
-
-    // Menampilkan nilai maksimum dan minimum
-    cout << "Nilai maksimum adalah " << maks << " berada di Array ke-" << lokasiMax << endl;
-    cout << "Nilai minimum adalah " << min << " berada di Array ke-" << lokasiMin << endl;
-
-    // Menampilkan menu
-    cout << "Menu:\n";
-    cout << "1. Maksimum\n";
-    cout << "2. Minimum\n";
-    cout << "3. Rata-rata\n";
-
-    // Pilihan operasi
-    cout << "Pilih operasi: ";
-    int pilihan;
-    cin >> pilihan;
-
-    switch (pilihan) {
-        case 1:
-            cout << "Nilai maksimum adalah " << maks << " berada di Array ke-" << lokasiMax << endl;
-            break;
-        case 2:
-            cout << "Nilai minimum adalah " << min << " berada di Array ke-" << lokasiMin << endl;
-            break;
-        case 3:
-            // Menghitung rata-rata
-            rata = jumlah / a;
-            cout << "Nilai rata-ratanya adalah " << rata << endl;
-            break;
-        default:
-            cout << "Pilihan tidak valid." << endl;
+    cout << endl;
+    //Tampilan array
+    for (int x = 0; x < x_size; x++)
+    {
+        for (int y = 0; y < y_size; y++)
+        {
+            for (int z = 0; z < z_size; z++)
+            {
+                cout << arr[x][y][z] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
     }
-
-    return 0;
 }
 ```
 #### Output:
@@ -401,7 +380,7 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (439)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/125242bb-06ec-49ef-a623-a796ea5dedee)
+![Screenshot (440)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/32579434-661c-4abc-8202-fdd8006e1d80)
 ### Penjelasan
 Program diatas merupakan program untuk mencari nilai maksimum, minimum, dan rata-rata dari sebuah array yang panjang dan elemennya ditentukan oleh user. 
 
