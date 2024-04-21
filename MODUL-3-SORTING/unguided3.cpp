@@ -53,8 +53,9 @@ int main() {
     char a[length];
 
     // Meminta user untuk memasukkan karakter-karakter sebanyak 'length'
-    cout << "Masukkan " << length << " karakter: ";
+    cout << "Masukkan " << length << " karakter" << endl;
     for (int i = 0; i < length; ++i){
+        cout << "karakter ke-" << i+1 << ": ";
         cin >> a[i];
     }
 
