@@ -370,4 +370,8 @@ Searching adalah sebuah algoritma dengan menerima sebuah argumen kunci dan langk
 ## Referensi
 [1] Ken Kinanti P, “Algoritma & Pemrograman”, 2011.
 
+<<<<<<< HEAD
 [2] Ali Akbar Rismayadi, Liah Jamaliah, "IMPLEMENTASI ALGORITMA SEQUENTIAL SEARCHING PADA APLIKASI E-OFFICE", 2019.
+=======
+[2] Ali Akbar Rismayadi, Liah Jamaliah, "IMPLEMENTASI ALGORITMA SEQUENTIAL SEARCHING PADA APLIKASI E-OFFICE", 2019.
+>>>>>>> a828054 (push modul 5)
