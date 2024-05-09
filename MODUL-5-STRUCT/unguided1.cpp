@@ -11,10 +11,10 @@ struct Buku{
 };
 
 int main(){
-    // Deklarasi variabel favorit dengan tipe Buku
+    // Deklarasi variabel Bukufavorit dengan tipe Buku
     Buku BukuFavorit;
     cout << "\tBuku Favorit Saya\n";
-    //Mengisi data ke dalam variabel BukuFavorit untuk buku1
+    //Mengisi data ke dalam variabel BukuFavorit untuk buku 1
     BukuFavorit.judul_buku[0] = "Algoritma Pemrograman";
     BukuFavorit.pengarang[0] = "Yunus Prademon";
     BukuFavorit.penerbit[0] = "Gramedia Citra Raya";
@@ -28,21 +28,21 @@ int main(){
     BukuFavorit.tebal_halaman[1] = 100;
     BukuFavorit.harga_buku[1] = 149.999;
 
-    //Mengisi data ke dalam variabel BukuFavorit untuk buku 2
+    //Mengisi data ke dalam variabel BukuFavorit untuk buku 3
     BukuFavorit.judul_buku[2] = "Cinta Brontosaurus";
     BukuFavorit.pengarang[2] = "Raditya Dika";
     BukuFavorit.penerbit[2] = "Gramedia Center Bandung";
     BukuFavorit.tebal_halaman[2] = 152;
     BukuFavorit.harga_buku[2] = 69.999;
 
-    //Mengisi data ke dalam variabel BukuFavorit untuk buku 2
+    //Mengisi data ke dalam variabel BukuFavorit untuk buku 4
     BukuFavorit.judul_buku[3] = "Mantappu Jiwa";
     BukuFavorit.pengarang[3] = "Jerome Polin";
     BukuFavorit.penerbit[3] = "Gramedia Center Surabaya";
     BukuFavorit.tebal_halaman[3] = 228;
     BukuFavorit.harga_buku[3] = 29.999;
 
-    //Mengisi data ke dalam variabel BukuFavorit untuk buku 2
+    //Mengisi data ke dalam variabel BukuFavorit untuk buku 5
     BukuFavorit.judul_buku[4] = "Laskar Pelangi";
     BukuFavorit.pengarang[4] = "Andrea Hirata";
     BukuFavorit.penerbit[4] = "Gramedia Center Internasional";
