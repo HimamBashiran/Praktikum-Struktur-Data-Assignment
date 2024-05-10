@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <iomanip> // Untuk format data agar lebih rapit 
+#include <iomanip> // Untuk format data agar lebih rapih
 using namespace std;
 
 class Node {
