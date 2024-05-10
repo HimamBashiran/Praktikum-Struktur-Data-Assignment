@@ -209,7 +209,7 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot (437)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/eb12e622-d570-403b-b321-08ce29ef421d)
+![Screenshot (584)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/adcca394-42a3-4efe-96dc-6f1882a6959c)
 ### Penjelasan
 Program di atas merupakan program untuk output dengan data yang diinputkan oleh user.
 
@@ -286,7 +286,7 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot (438)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/cbec07a0-0362-4dc3-87b5-c496fda286b7)
+![Screenshot (585)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/750984f5-d114-4c11-ad01-0896c7db4d0a)
 ### Penjelasan
 Program diatas merupakan program yang dirancang untuk membuat dan mengelola sebuah array tiga dimensi berdasarkan ukuran yang dimasukkan oleh user. 
 
@@ -380,7 +380,7 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (440)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/32579434-661c-4abc-8202-fdd8006e1d80)
+![Screenshot (586)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/164a0e46-5ea9-4a5d-9950-65ebeb366dd1)
 ### Penjelasan
 Program diatas merupakan program untuk mencari nilai maksimum, minimum, dan rata-rata dari sebuah array yang panjang dan elemennya ditentukan oleh user. 
 
