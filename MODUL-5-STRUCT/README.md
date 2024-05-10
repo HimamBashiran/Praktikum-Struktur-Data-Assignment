@@ -13,7 +13,7 @@ Subprogram adalah bagian kecil hasil pembagian program dalam konsep prosedural p
 
 ### Struktur (struct)
 Struct adalah tipe data bentukan yang berisi kumpulan variabel-variabel yang bernaung dalam satu nama yang sama dan memiliki kaitan satu sama lain. Berbeda dengan array hanya berupa kumpulan variabel yang bertipe data sama, struct bisa memiliki variabel-variabel yang bertipe data sama atau berbeda, bahkan bisa menyimpan variabel yang bertipe data array atau struct itu sendiri. Variabel-variabel yang menjadi anggota struct disebut dengan elemen struct [2]. Terdapat banyak format penulisan diantaranya:
-![Screenshot 2024-05-03 125410](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/a028c1a0-ccb7-4a55-8469-14a86f85f345)
+![Screenshot 2024-05-03 125410](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/c8dbfb30-f879-4644-9be5-6ef45434920e)
 
 ## Guided
 
@@ -80,7 +80,7 @@ harga_buku: Double untuk menyimpan harga buku.
 Kemudian mendeklarasikan Buku buku1, buku2 dan mengisi data ke buku1 dan menampilkan data buku1. Lakukan hal yang sama untuk instan variabel buku2.
 
 ### 2. Buatlah sebuah struktur dengan skema seperti dibawah, isi dengan nilai kemudian jalankan
-![Screenshot 2024-05-03 131331](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/beeab5f1-864d-4682-b66a-b8db3383dbfd)
+![Screenshot 2024-05-03 131331](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/1180b477-2501-44ba-95a0-6d85c6cf8b2e)
 
 ```C++
 #include <iostream>
@@ -228,7 +228,7 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot (558)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/d2a8fef8-7178-45cd-8bda-d27fb19ddf1e)
+![Screenshot (594)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/6cd94d21-1cbc-4524-bd0f-d7f6ebe1f7c8)
 ### Penjelasan
 Program di atas merupakan program untuk memodifikasi tugas guided pertama, sehingga setiap item yang terdapat pada struct buku berupa array yang berukuran 5 dan diisi dengan data yang kemudian ditampilkan.
 
@@ -238,7 +238,7 @@ Setiap array memiliki elemen yang sesuai dengan atribut buku, seperti 'judul_buk
 Terakhir, setelah mengisi data, kita menggunakan perintah 'cout' untuk menampilkan informasi tentang setiap buku favorit.
 
 ### Full Code Screenshot
-![unguided1](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/79d04bdf-9da6-4f23-80e7-0fa0d505dbd3)
+![unguided4](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/caf392ea-80d8-40a4-a37e-623e5f38a53c)
 
 ### 2. Apa yang terjadi jika deklarasi variabel struct yang dibuat pada tugas guided I, berjenis Array. Bagaimana cara mengisi data dan menampilkannya ?
 
@@ -300,7 +300,7 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot (559)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/b556d6d3-ed04-476e-83f6-5ee162ab9ac7)
+![Screenshot (595)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/9c6b8aa3-9243-431b-a4d6-e0900572c4a1)
 ### Penjelasan
 Program di atas merupakan contoh program berdasarkan pertanyaan "Apa yang terjadi jika deklarasi variabel struct yang dibuat pada tugas guided I, berjenis Array. Bagaimana cara mengisi data dan menampilkannya?"
 
@@ -320,7 +320,7 @@ Program dimulai dengan memanggil library 'iostream' untuk I/O, library 'string' 
 Terakhir, setelah mengisi data, kita menggunakan perintah 'cout' untuk menampilkan informasi tentang setiap buku favorit. Dengan menggunakan array dari struktur Buku, kita dapat mengelola dan memanipulasi kumpulan buku dengan cara yang lebih efisien dalam program. Jika ingin menyimpan lebih banyak buku, kita hanya perlu menyesuaikan ukuran array sesuai dengan jumlah buku yang ingin kita simpan. Misalnya, jika ingin menyimpan tiga buku, kita dapat mendeklarasikan array Buku daftar_buku[3]; dan kemudian menggunakan loop hanya untuk tiga elemen.
 
 ### Full Code Screenshot
-![unguided2](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/b15c2e82-a20b-430a-aa72-3d5a99f4cc04)
+![unguided5](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/2b5fe547-8cb8-41b1-8f44-4323176ed1ef)
 
 ## Kesimpulan
 #### Hasil praktikum: 
