@@ -208,7 +208,7 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot (527)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/bd7fb798-d35f-4c08-9c43-b9934823aeb7)
+![Screenshot (590)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/9b3469eb-3c26-44f8-8fab-111dece422d3)
 ### Penjelasan
 Program di atas merupakan program untuk mencari sebuah 'huruf' pada sebuah kalimat yang sudah di input dengan menggunakan algoritma Binary Search.
 
@@ -217,7 +217,7 @@ Program dimulai dengan memanggil library 'iostream' untuk I/O, library 'string' 
 Terakhir, mendefinisikan fungsi utama 'main' yang berisi program meminta pengguna memasukkan sebuah kalimat menggunakan fungsi 'getline()' untuk membaca seluruh baris. Selanjutnya, program meminta pengguna memasukkan sebuah 'huruf' yang ingin dicari. Kemudian, fungsi 'BinarySearch()' dipanggil dengan parameter kalimat dan 'huruf' yang ingin dicari.
 
 ### Full Code Screenshot
-![unguided1](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/8397e2ec-1b22-43dc-8679-6fb719d7283a)
+![unguided1](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/2b7c96f1-d699-4962-9b79-b4e3713f893a)
 
 ### 2. Buatlah sebuah program yang dapat menghitung banyaknya 'huruf' vocal dalam sebuah kalimat!
 
@@ -299,10 +299,9 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot (529)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/38ad6ade-f876-4278-8478-706cae16ac69)
+![Screenshot (591)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/4396720d-cf65-484d-b4bd-70cd7f2fef48)
 ### Penjelasan
 Program diatas merupakan program untuk menghitung banyaknya 'huruf' vocal dalam sebuah kalimat!
-
 
 Program dimulai dengan memanggil library 'iostream' untuk I/O, library 'string' untuk menggunakan tipe data string, dan memanggil library 'algorithm' untuk fungsi sort.
 
@@ -313,7 +312,7 @@ Mendefinisikan fungsi 'SearchVokal' untuk menghitung jumlah huruf vokal dalam ka
 Terakhir, membuat fungsi utama 'main' untuk memasukkan sebuah kalimat dan sebuah huruf yang ingin dicari, memanggil fungsi BinarySearch untuk mencari huruf yang dimasukkan dalam kalimat, memanggil fungsi SearchVokal untuk menghitung jumlah huruf vokal dalam kalimat, dan mencetak banyaknya huruf vokal tersebut.
 
 ### Full Code Screenshot
-![unguided2](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/29c40294-80bd-4f4f-badf-d8521b71c83b)
+![unguided2](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/65c112aa-a248-416f-b94f-ab487d3def2e)
 
 ### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 
@@ -349,7 +348,7 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (530)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/cd6d2907-7fab-40e4-a912-5ec55a90eace)
+![Screenshot (592)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/097e9f91-3c32-4884-8b39-64bfd64cfc61)
 ### Penjelasan
 Program diatas merupakan program untuk menghitung seberapa banyak angka 4 pada data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4 menggunakan algoritma sequential search.
 
@@ -358,7 +357,7 @@ Program dimulai dengan memanggil library iostream untuk I/O. Selanjutnya, membua
 Melakukan pengecekan apakah nilai yang dicari ditemukan: Jika ditemukan, mencetak berapa kali nilai tersebut muncul dalam array. Jika tidak ditemukan, mencetak pesan bahwa nilai tersebut tidak ditemukan.
 
 ### Full Code Screenshot
-![unguided3](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/df47b47f-13fd-41b9-b718-9ff200f5c50d)
+![unguided3](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/1446cf0b-e451-4078-9556-4b2d7c9148a4)
 
 ## Kesimpulan
 #### Hasil praktikum: 
