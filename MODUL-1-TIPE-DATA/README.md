@@ -193,7 +193,7 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot (380)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/ebef92c5-7d66-4c8f-9361-bee0b4dd08b6)
+![Screenshot (581)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/ffc6a16e-dec6-4cea-87ba-1098beb73c98)
 ### Penjelasan
 Program di atas merupakan program untuk menghitung volume dan luas permukaan kerucut. Mendeklarasikan tipe data abstrak yaitu const float pi = 3.14.
 
@@ -263,7 +263,7 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot (382)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/c7e8a46a-69e1-4b95-80ad-aa02cc20c2a9)
+![Screenshot (582)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/426fb79e-dcc8-4e21-b922-8769acf234e0)
 ### Penjelasan
 a) Class: fungsi class merupakan fungsi yang sering digunakan pada Object Oriented Programming (OOP) dan mengandung atribut (variabel) dan method (fungsi) yang sering didefinisikan sebagai perilaku dan sifatnya. Akses kontrol dari class adalah private. Dalam program ini, class Buku tidak digunakan secara langsung tetapi mewakili sebuah kelas dengan anggota private.
 
@@ -303,7 +303,7 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (384)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/3837c18a-0839-45a4-8b1c-481b47525aed)
+![Screenshot (583)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/f3b6b27d-a0e9-47ba-b5bf-d5b72b045896)
 ### Penjelasan
 Map adalah struktur data asosiatif yang memungkinkan penyimpanan dan pengaksesan data berdasarkan kunci yang unik. Map disini digunakan untuk menyimpan kunci nilai yang mewakili hari dalam seminggu. Perbedaannya adalah Array menggunakan indeks berbasis integer yang dimulai dari 0 dan secara berurutan tetapi kurang fleksibel sedangkan Map mengizinkan kunci dari berbagai tipe data dan tidak harus berurutan atau berbasis integer dan  fleksible dalam penambahan, penghapusan, atau modifikasi dengan mudah.
 
