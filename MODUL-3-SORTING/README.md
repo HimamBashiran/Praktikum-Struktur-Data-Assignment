@@ -243,7 +243,7 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (516)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/270a1aaf-04dc-41fe-b456-f46b7bab2297)
+![Screenshot (587)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/0552d098-87a2-4fda-aaee-f0213cda587e)
 ### Penjelasan
 Program di atas merupakan program untuk mengurutkan Indeks Prestasi Semester mahasiwa kelas S1 IF 2016 G dari yang terbesar hingga terkecil dengan menggunakan algoritma Selection Sort. 
 
@@ -252,7 +252,7 @@ Program dimulai dengan mendefinisikan fungsi 'selection_sort_descending' yang me
 Terakhir, mendefinisikan fungsi 'main' yang di dalamnya terdapat sebuah array dengan 5 elemen float diinisialisasikan. Kemudian memanggil fungsi 'selection_sort_descending' untuk mengurutkan IPS mahasiswa secara descending.
 
 ### Full Code Screenshot
-![unguided1](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/3cf0a41e-dde0-4dd5-a96c-03e9165acd63)
+![unguided1](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/d7adbba4-3e81-4968-b3ac-7d3997603bcb)
 
 ### 2. Pak RT memiliki 10 warga dengan nama: siti, situ, sana, ana, ani, caca, cici, dida, dodo, dan dadi. Supaya mudah dalam melakukan pencarian, Pak RT akan mengurutkan nama-nama tersebut sesuai dengan alfabet. Buatlah program untuk membantu Pak RT dengan menggunakan algoritma Bubble Sort! (Score: 30)
 
@@ -300,7 +300,7 @@ void buble_sort(string arr[], int length){
     }
 ```
 #### Output:
-![Screenshot (517)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/7adfdd05-5b85-451a-913d-b298009047ac)
+![Screenshot (588)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/28d540a9-5695-401a-af64-b901fac52052)
 ### Penjelasan
 Program diatas merupakan program yang dirancang untuk mengurutkan nama-nama 10 warga sesuai alfabet menggunakan algoritma buble sort.
 
@@ -311,7 +311,7 @@ Lanjut membuat fungsi 'print_array' yang mengandung parameter 'a' untuk menyimpa
 Terakhir, membuat fungsi 'main' untuk memanggil fungsi-fungsi sebelumnya termasuk mengurutkan nama-nama warga sesuai alfabet dengan algoritma buble sort.
 
 ### Full Code Screenshot
-![unguided2](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/e8bcf756-e10b-447b-b310-e19a39d849d6)
+![unguided2](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/4e522eb9-0d6b-4889-8d47-bc64d60624c0)
 
 ### 3. Buatlah program yang meminta user menginputkan suatu bilangan n dan meminta user untuk menginputkan sejumlah n karakter. Kemudian program akan melakukan sorting secara menaik (ascending) dan menurun (descending)! (Score: 40)
 
@@ -395,7 +395,7 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (519)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/1b278bfc-f7b3-4ae3-8db6-793c8295b8e9)
+![Screenshot (589)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/e28a5ad7-fd1e-488a-adca-4486b178591e)
 ### Penjelasan
 Program diatas merupakan program yang meminta user menginputkan suatu bilangan n dan meminta user untuk menginputkan sejumlah n karakter. Kemudian program akan melakukan sorting secara menaik (ascending) dan menurun (descending) dengan menggunakan aloritma insertion sort.
 
@@ -404,7 +404,7 @@ Program dimulai dengan memanggil library iostream untuk I/O. Selanjutnya, membua
 Kemudian, membuat fungsi 'print_array' untuk menampilkan isi array 'a' dengan panjang 'length'. Dan terakhir, membuat fungsi utama 'main' untuk meminta user memasukkan jumlah karakter, memasukkan karakter-karakter tersebut, memanggil fungsi-fungsi sebelumnya untuk mengurutkan secara ascending maupun descending.
 
 ### Full Code Screenshot
-![unguided3](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/6aef00f1-0d2b-4b16-8511-60170149085e)
+![unguided3](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/f830c3a4-120f-4c85-bae2-4d9879a729d5)
 
 ## Kesimpulan
 #### Hasil praktikum: 
