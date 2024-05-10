@@ -784,7 +784,7 @@ int main() {
 ```
 
 #### Output:
-
+![Screenshot (571)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/11bd8ecb-172a-4992-87bd-6e90385b6d2d)
 ### Penjelasan
 Program di atas merupakan program untuk mengenai single linked list non-circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user.
 
@@ -812,3 +812,308 @@ Terakhir, membuat fungsi utama 'main()', program memberikan pilihan operasi kepa
 
 ### Full Code Screenshot
 ![unguided1](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/049cbdd2-5235-4614-bf40-4d90aef128fb)
+
+### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
+![Screenshot 2024-05-10 162809](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/b4cfbef4-ac17-4ff5-93f8-9c0e129d05ca)
+
+```C++
+#include <iostream>
+#include <string>
+#include <iomanip> // Untuk format data agar lebih rapih
+using namespace std;
+
+class Node {
+public:
+    string namaProduk;
+    double harga; 
+    Node* prev;
+    Node* next;
+};
+
+class DoublyLinkedList {
+public:
+    Node* head;
+    Node* tail;
+
+    DoublyLinkedList() {
+        head = nullptr;
+        tail = nullptr;
+    }
+
+    void push(string namaProduk, double harga) {
+        Node* newNode = new Node;
+        newNode->namaProduk = namaProduk;
+        newNode->harga = harga;
+        newNode->prev = nullptr;
+        newNode->next = head;
+
+        if (head != nullptr) {
+            head->prev = newNode;
+        } else {
+            tail = newNode;
+        }
+
+        head = newNode;
+    }
+
+    void pop() {
+        if (head == nullptr) {
+            return;
+        }
+
+        Node* temp = head;
+        head = head->next;
+
+        if (head != nullptr) {
+            head->prev = nullptr;
+        } else {
+            tail = nullptr;
+        }
+
+        delete temp;
+    }
+
+    bool update(string oldNamaProduk, string newNamaProduk, double newHarga) {
+        Node* current = head;
+        while (current != nullptr) {
+            if (current->namaProduk == oldNamaProduk) {
+                current->namaProduk = newNamaProduk;
+                current->harga = newHarga;
+                return true;
+            }
+            current = current->next;
+        }
+        return false;
+    }
+
+    void deleteAll() {
+        Node* current = head;
+        while (current != nullptr) {
+            Node* temp = current;
+            current = current->next;
+            delete temp;
+        }
+        head = nullptr;
+        tail = nullptr;
+    }
+
+    void display() {
+        Node* current = head;
+        cout << setw(20) << left << "Nama Produk" << "Harga" << endl;
+        cout << setfill('-') << setw(30) << "-" << endl;
+        cout << setfill(' ');
+        while (current != nullptr) {
+            cout << setw(20) << left << current->namaProduk << fixed << setprecision(3) << current->harga << endl;
+            current = current->next;
+        }
+        cout << endl;
+    }
+
+    void insertAtPosition(string namaProduk, double harga, int position) {
+        if (position < 1) {
+            cout << "Posisi tidak tersedia" << endl;
+            return;
+        }
+
+        Node* newNode = new Node;
+        newNode->namaProduk = namaProduk;
+        newNode->harga = harga;
+
+        if (position == 1) {
+            newNode->next = head;
+            newNode->prev = nullptr;
+            if (head != nullptr) {
+                head->prev = newNode;
+            } else {
+                tail = newNode;
+            }
+            head = newNode;
+            return;
+        }
+
+        Node* current = head;
+        int currentPosition = 1;
+        while (currentPosition < position - 1 && current != nullptr) {
+            current = current->next;
+            currentPosition++;
+        }
+
+        if (current == nullptr) {
+            cout << "Posisi tidak tersedia" << endl;
+            return;
+        }
+
+        newNode->next = current->next;
+        newNode->prev = current;
+        if (current->next != nullptr) {
+            current->next->prev = newNode;
+        } else {
+            tail = newNode;
+        }
+        current->next = newNode;
+    }
+
+    void deleteAtPosition(int position) {
+        if (head == nullptr || position < 1) {
+            cout << "Posisi tidak tersedia" << endl;
+            return;
+        }
+
+        if (position == 1) {
+            Node* temp = head;
+            head = head->next;
+            if (head != nullptr) {
+                head->prev = nullptr;
+            } else {
+                tail = nullptr;
+            }
+            delete temp;
+            return;
+        }
+
+        Node* current = head;
+        int currentPosition = 1;
+        while (currentPosition < position && current != nullptr) {
+            current = current->next;
+            currentPosition++;
+        }
+
+        if (current == nullptr) {
+            cout << "Posisi tidak tersedia" << endl;
+            return;
+        }
+
+        if (current == tail) {
+            tail = tail->prev;
+            tail->next = nullptr;
+            delete current;
+            return;
+        }
+
+        current->prev->next = current->next;
+        current->next->prev = current->prev;
+        delete current;
+    }
+};
+
+int main() {
+    DoublyLinkedList list;
+    while (true) {
+        cout << "Toko Skincare Purwokerto" << endl;
+        cout << "1. Tambah Data" << endl;
+        cout << "2. Hapus Data" << endl;
+        cout << "3. Update Data" << endl;
+        cout << "4. Tambah Data Urutan Tertentu" << endl;
+        cout << "5. Hapus Data Urutan Tertentu" << endl;
+        cout << "6. Hapus Seluruh Data" << endl;
+        cout << "7. Tampilkan Data" << endl;
+        cout << "8. Exit" << endl;
+        int choice;
+        cout << "Pilih operasi: ";
+        cin >> choice;
+        switch (choice) {
+            case 1: {
+                string namaProduk;
+                double harga;
+                cout << "Masukkan nama produk: ";
+                cin >> namaProduk;
+                cout << "Masukkan harga: ";
+                cin >> harga;
+                list.push(namaProduk, harga);
+                break;
+            }
+            case 2: {
+                list.pop();
+                break;
+            }
+            case 3: {
+                string oldNamaProduk, newNamaProduk;
+                double newHarga;
+                cout << "Masuk nama produk yang akan di update: ";
+                cin >> oldNamaProduk;
+                cout << "Masukkan nama produk yang baru: ";
+                cin >> newNamaProduk;
+                cout << "Masukkan harga produk yang baru: ";
+                cin >> newHarga;
+                bool updated = list.update(oldNamaProduk, newNamaProduk, newHarga);
+                if (!updated) {
+                    cout << "Data tidak ada" << endl;
+                }
+                break;
+            }
+            case 4: {
+                string namaProduk;
+                double harga;
+                int position;
+                cout << "Masukkan nama produk: ";
+                cin >> namaProduk;
+                cout << "Masukkan harga: ";
+                cin >> harga;
+                cout << "Masukkan posisi: ";
+                cin >> position;
+                list.insertAtPosition(namaProduk, harga, position);
+                break;
+            }
+            case 5: {
+                int position;
+                cout << "Masukkan posisi yang akan di hapus: ";
+                cin >> position;
+                list.deleteAtPosition(position);
+                break;
+            }
+            case 6: {
+                list.deleteAll();
+                break;
+            }
+            case 7: {
+                list.display();
+                break;
+            }
+            case 8: {
+                return 0;
+            }
+            default: {
+                cout << "Pilihan salah. Masukkan operasi yang benar" << endl;
+                break;
+            }
+        }
+    }
+    return 0;
+}
+```
+#### Output:
+![Screenshot (580)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/c821b432-326d-4b00-b2de-20aed1a5f156)
+### Penjelasan
+Program di atas merupakan program dari operasi-operasi dasar pada linked list ganda (double linked list) untuk menyimpan data nama produk skincare di Toko Purwokerto beserta harganya. 
+
+Program dimulai dengan mengimpor library 'iostream' untuk input/ouput dan mengimpor library 'string' untuk menggunakan tipe data string. Lalu, mendeklarasikan kelas 'Node' yang digunakan untuk merepresentasikan setiap elemen dalam linked list. Setiap node memiliki atribut 'namaProduk' untuk menyimpan nama produk (bertipe string), 'harga' untuk menyimpan harga produk (bertipe double), serta pointer 'prev' dan 'next' untuk menunjukkan node sebelum dan sesudahnya dalam linked list. Mendeklarasikan Kelas 'DoublyLinkedList' yang mengatur operasi-operasi yang dapat dilakukan pada linked list ganda. Ini termasuk operasi untuk menambahkan node di awal (push), menghapus node pertama (pop), mengupdate data node, menghapus semua data, menampilkan data, serta operasi khusus untuk menyisipkan dan menghapus node pada posisi tertentu. Fungsi 'push' digunakan untuk menambahkan node baru ke depan linked list dengan nilai 'namaProduk' dan 'harga' yang diberikan. Node baru ini dihubungkan dengan node yang sebelumnya berada di depan (jika ada). Fungsi 'pop' dibuat untuk menghapus node pertama dari linked list. Fungsi 'update' dibuat untuk mencari node dengan 'namaProduk' tertentu, kemudian mengganti nama produk dan harga sesuai dengan input yang diberikan. Fungsi 'deleteAll' dibuat untuk menghapus seluruh node dalam linked list. Fungsi 'display' dibuat untuk menampilkan semua data produk yang tersimpan dalam linked list dengan format yang terstruktur. Fungsi 'insertAtPosition' dibuat untuk menambahkan node baru ke dalam linked list pada posisi tertentu yang ditentukan pengguna. Fungsi 'deleteAtPosition' dibuat untuk menghapus node dari linked list pada posisi tertentu yang ditentukan pengguna.
+
+Terakhir, membuat fungsi utama 'main()', program memberikan pilihan operasi kepada pengguna. Pengguna dapat memilih untuk menambah data, menghapus data, mengupdate data, menyisipkan data pada posisi tertentu, menghapus data pada posisi tertentu, menghapus seluruh data, menampilkan data, atau keluar dari program. Program akan terus berjalan hingga pengguna memilih untuk keluar.
+
+#### 1. Tambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific
+![Screenshot (578)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/75d99104-d334-4a65-a35a-ec988be3c056)
+
+#### 2.	Hapus produk wardah
+![Screenshot (579)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/eebad830-5d1e-437d-a062-f72cfde888a8)
+
+#### 3.	Update produk Hanasui menjadi Cleora dengan harga 55.000
+![Screenshot (580)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/c821b432-326d-4b00-b2de-20aed1a5f156)
+
+#### 4. Tampilan akhir
+![Screenshot (580)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/c821b432-326d-4b00-b2de-20aed1a5f156)
+
+### Full Code Screenshot
+![unguided2](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/d4294e28-c018-4aee-8b59-4e145557ac9b)
+
+## Kesimpulan
+#### Hasil praktikum:
+Pada kesempatan praktikum ini, saya belajar program yang disebut Linked List. Linked List sendiri adalah suatu bentuk struktur data yang berupa sekumpulan elemen data yang bertipe sama dimana tiap elemen saling berkaita atau dihubungkan dengan elemen lain melalui suatu pointer. Pointer itu sendiri adalah alamat elemen data yang tersimpan di memori. Penggunaan pointer untuk mengacu elemen berakibat elemen-elemen bersebelahan secara logik walau tidak bersebelahan secara fisik di memori.
+Berdasarkan jenis operasinya, terdapat dua algoritma Linked List yaitu Single Linked List dan Double Linked List.
+
+#### Pelajaran yang didapat: 
+Linked list adalah suatu bentuk struktur data yang berupa sekumpulan elemen data yang bertipe sama dimana tiap elemen saling berkaita atau dihubungkan dengan elemen lain melalui suatu pointer. Pointer itu sendiri adalah alamat elemen data yang tersimpan di memori. Penggunaan pointer untuk mengacu elemen berakibat elemen-elemen bersebelahan secara logik walau tidak bersebelahan secara fisik di memori. Berdasarkan jenis operasinya, terdapat dua algoritma Linked List yaitu Single Linked List (suatu kumpulan elemen data (yang disebut sebagai node) dimana urutannya ditentukan oleh suatu pointer) dan Double Linked List (mirip dengan single linked list, namun setiap node dalam double linked list memiliki dua pointer: satu untuk menunjuk ke node sebelumnya (prev) dan satu untuk menunjuk ke node berikutnya (next)).
+
+## Referensi
+[1] Johnson Sihombing, “PENERAPAN STACK DAN QUEUE PADA ARRAY DAN LINKED LIST DALAM JAVA”, 2019.
+
+[2] Abdi Dharma, Hendra Handoko Syahputra P, "Aplikasi Pembelajaran Linked List Berbasis Mobile Learning", 2017. 
