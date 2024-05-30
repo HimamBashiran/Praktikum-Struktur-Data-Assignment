@@ -326,8 +326,4 @@ Priority Queue adalah struktur data yang memungkinkan penyimpanan elemen-elemen 
 ## Referensi
 [1] Riczky Pratama, “Priority Queue: Konsep dan Penggunaan dalam Algoritma”, 2023. 
 
-<<<<<<< HEAD
 [2] Cheng, T., & Shang, Y, "A Survey of Priority Queues", 2020.
-=======
-[2] Cheng, T., & Shang, Y, "A Survey of Priority Queues", 2020.
->>>>>>> 3c57deb8e5b9f5f8a08c1489259507d8cb13a058
