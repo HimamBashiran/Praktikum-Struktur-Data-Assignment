@@ -51,5 +51,6 @@ int main(){
         cout << "\tTebal halaman: " << MyBook.tebal_halaman[i] << endl;
         cout << "\tHarga: Rp" << MyBook.harga_buku[i] << endl;
     }
+    
     return 0;
 }
