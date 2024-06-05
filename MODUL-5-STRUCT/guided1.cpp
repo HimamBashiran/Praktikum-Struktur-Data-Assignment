@@ -40,6 +40,5 @@ int main(){
     cout << "\tPenerbit: " << buku2.penerbit << endl;
     cout << "\tTebal halaman: " << buku2.tebal_halaman << endl;
     cout << "\tHarga: Rp" << buku2.harga_buku << endl;
-
     return 0;
 }
